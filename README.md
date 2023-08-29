@@ -26,7 +26,8 @@ This is the repo for Vicuna Chemical Expert, which can help to solve some chemic
 |     13107200     | 6685086720 |   0.1961   |
 * When training is done, **merge lora** back to base model
 * Below is the finetuning train/loss graph:
-![](https://hackmd.io/_uploads/Bks2i8jT2.png)
+<img width="807" alt="image" src="https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/e80e17db-9023-45dc-a529-ccfb7cccd559">
+
 * **HuggingFace**: [FelixChao/vicuna-7B-chemical](https://huggingface.co/FelixChao/vicuna-7B-chemical)
 
 ## Setup

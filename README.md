@@ -1,5 +1,5 @@
 # Vicuna-Chemical-Expert
-<img width="420" alt="image" src="https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/58830003-a3e1-484a-9759-7577e3ba1287">
+![vicuna_chemist_logo](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/785af3da-2fa7-4619-b72c-088dcd06eeb6)
 
 
 

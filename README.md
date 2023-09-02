@@ -28,7 +28,8 @@ This is the repo for Vicuna Chemical Expert, which can help to solve some chemic
 * Below is the finetuning train/loss graph:
 ![finetune_process](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/f61b5b84-1217-4110-8889-8e434f9dc2d2)
 
-* **HuggingFace**: [FelixChao/vicuna-7B-chemical](https://huggingface.co/FelixChao/vicuna-7B-chemical)
+* **HuggingFace for Chemical**: [FelixChao/vicuna-7B-chemical](https://huggingface.co/FelixChao/vicuna-7B-chemical)
+* **HuggingFace for Coder**: [FelixChao/vicuna-33b-coder](https://huggingface.co/FelixChao/vicuna-33b-coder)
 
 ## Setup
 To inference this model on your local

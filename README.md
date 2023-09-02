@@ -33,7 +33,7 @@ This is the repo for Vicuna Chemical Expert, which can help to solve some chemic
 ## Setup
 To inference this model on your local
 
-* Create miniconda environment and activate
+* Create conda environment and activate
 ```sh
 conda create -n vicuna-chemical python=3.10 
 conda activate vicuna-chemical

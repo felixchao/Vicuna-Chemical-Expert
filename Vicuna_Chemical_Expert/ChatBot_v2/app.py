@@ -88,7 +88,7 @@ def selectbox_call():
 
 
 with st.sidebar:
-    st.title('?? Vicuna Chatbot')
+    st.title('🦙 Vicuna Chatbot')
 
     st.subheader('Models')
 

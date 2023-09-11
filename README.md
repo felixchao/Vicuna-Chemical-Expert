@@ -121,4 +121,10 @@ From the above examples which are the **latest data**, we can see that when the 
     <br>
 </p>
 
+## Reference
+This project is based on the open sources below, and I am very grateful to all the researchers and developers.
+* **Base Model**: [**Vicuna-7b-v1.3 by LMSYS**](https://huggingface.co/lmsys/vicuna-7b-v1.3) and [**Vicuna-7b-v1.3-sharded-bf16 by CleverShovel**](https://huggingface.co/CleverShovel/vicuna-7b-v1.3-sharded-bf16)
+* **Fintune**: [**Parameter-Efficient Fine-Tuning (PEFT) from huggingface**](https://github.com/huggingface/peft) and [**LoRA: Low-Rank Adaptation of Large Language Models from microsoft**](https://github.com/microsoft/LoRA)
+* **Dataset**: [**andersonbcdefg/chemistry by andersonbcdefg**](https://huggingface.co/datasets/andersonbcdefg/chemistry)
+* **Front-End**: [**Streamlit**](https://github.com/streamlit)
 

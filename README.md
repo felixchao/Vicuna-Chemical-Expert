@@ -89,17 +89,26 @@ pipe = pipeline("text-generation", model="FelixChao/vicuna-7B-chemical")
 </p>
 
 **Without** ChromaDB ❌:
-
-![image](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/227a0b74-f062-466a-808e-4fd6df7ebef2)
+<p align="center">
+    <br>
+    <img src="./images/Blue_hydrogen.jpg" width="700"/>
+    <br>
+</p>
 
 ### Hydrogen Colors Problem
 **With** ChromaDB ✅:
-
-![image](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/d0298fc5-a6ee-46dc-b974-e2122dbd4cb5)
+<p align="center">
+    <br>
+    <img src="./images/Hydrogen_Colors_db.jpg" width="700"/>
+    <br>
+</p>
 
 **Without** ChromaDB ❌:
-
-![image](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/5ed6f54c-b040-45a0-b6be-23f332f518c8)
+<p align="center">
+    <br>
+    <img src="./images/Hydrogen_Colors.jpg" width="700"/>
+    <br>
+</p>
 
 
 From the above examples, we can see that when the finetuned model is **connected** with the vector database, it will generate the answer better than **without connection** on **the latest data**.

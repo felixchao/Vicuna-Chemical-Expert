@@ -82,8 +82,11 @@ pipe = pipeline("text-generation", model="FelixChao/vicuna-7B-chemical")
 
 ### Blue Hydrogen Problem
 **With** ChromaDB ✅:
-
-![image](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/2fabfc53-7654-42d7-a4a6-f30f942a0d74)
+<p align="center">
+    <br>
+    <img src="./images/Blue_hydrogen_db.jpg" width="700"/>
+    <br>
+</p>
 
 **Without** ChromaDB ❌:
 

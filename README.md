@@ -113,3 +113,11 @@ pipe = pipeline("text-generation", model="FelixChao/vicuna-7B-chemical")
 
 From the above examples which is the **latest data**, we can see that when the finetuned model is **connected** with the vector database, it will generate the answer better than **without connection**.
 
+## Demo
+<p align="center">
+    <br>
+    <img src="./images/demo.gif" width="700"/>
+    <br>
+</p>
+
+We ask a question about photosynthesis, it can also give the corresponding chemical formula.

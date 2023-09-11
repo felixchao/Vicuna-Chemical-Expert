@@ -51,7 +51,47 @@ streamlit run app.py
 
 Note: Please make sure that your gpu RAM (**at least 16GB**) is enough for loading model, avoid CUDA Out Of Memory(**OOM**).
 
-## Usage
+## Inference
+### Model Inference
+```py
+from transformers import AutoTokenizer, AutoModelForCausalLM
+tokenizer = AutoTokenizer.from_pretrained("FelixChao/vicuna-7B-chemical")
+model = AutoModelForCausalLM.from_pretrained("FelixChao/vicuna-7B-chemical",device_map="auto")
+
+encoding = tokenizer(example_text, return_tensors="pt").to("cuda:0")
+output = model.generate(input_ids=encoding.input_ids, attention_mask=encoding.attention_mask, max_new_tokens=512, do_sample=True, eos_token_id=tokenizer.eos_token_id)
+predict = tokenizer.decode(output[0], skip_special_tokens=True)
+```
+### Pipeline inference(Faster)
+```py
+# Use a pipeline as a high-level helper
+from transformers import pipeline
+
+pipe = pipeline("text-generation", model="FelixChao/vicuna-7B-chemical")
+```
+## Vector Database
+* Using **ChromaDB** and **LangChain** to create 4 similarity searches in (Hydrogen)Papers.
+* This feature can improve the incomplete dataset in which the base model was trained, creating an augmented dataset.
+* Below is a demo that can see the difference between **VectorDB** and **not**.
+
+### Blue Hydrogen Problem
+**With** ChromaDB ✅:
+
+![image](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/2fabfc53-7654-42d7-a4a6-f30f942a0d74)
+
+**Without** ChromaDB ❌:
+
+![image](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/227a0b74-f062-466a-808e-4fd6df7ebef2)
+
+### Hydrogen Colors Problem
+**With** ChromaDB ✅:
+
+![image](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/d0298fc5-a6ee-46dc-b974-e2122dbd4cb5)
+
+**Without** ChromaDB ❌:
+
+![image](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/5ed6f54c-b040-45a0-b6be-23f332f518c8)
 
 
+From the above examples, we can see that when the finetuned model is **connected** with the vector database, it will generate the answer better than **without connection** on **the latest data**.
 

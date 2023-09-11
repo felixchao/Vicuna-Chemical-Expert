@@ -1,7 +1,9 @@
 # Vicuna-Chemical-Expert
-![vicuna_chemist_logo](https://github.com/felixchao/Vicuna-Chemical-Expert/assets/75468071/785af3da-2fa7-4619-b72c-088dcd06eeb6)
-
-
+<p align="center">
+    <br>
+    <img src="./images/vicuna_chemist_logo.png" width="700"/>
+    <br>
+</p>
 
 ## Update Logs
 * 2023.8.15: Create Chatbot_v2

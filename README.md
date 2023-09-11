@@ -33,7 +33,6 @@ This is the repo for Vicuna Chemical Expert, which can help to solve some chemic
     <img src="./images/finetune_process.png" width="700"/>
     <br>
 </p>
-
 * **HuggingFace for Chemical**: [FelixChao/vicuna-7B-chemical](https://huggingface.co/FelixChao/vicuna-7B-chemical)
 * **HuggingFace for Coder**: [FelixChao/vicuna-33b-coder](https://huggingface.co/FelixChao/vicuna-33b-coder)
 

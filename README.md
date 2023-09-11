@@ -111,5 +111,5 @@ pipe = pipeline("text-generation", model="FelixChao/vicuna-7B-chemical")
 </p>
 
 
-From the above examples, we can see that when the finetuned model is **connected** with the vector database, it will generate the answer better than **without connection** on **the latest data**.
+From the above examples(**latest data**), we can see that when the finetuned model is **connected** with the vector database, it will generate the answer better than **without connection**.
 
